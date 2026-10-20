@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus Flow - Pomodoro & Görev Asistanı</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="pomodoro-container">
+        <h1>🍅 Focus Flow</h1>
+        <p class="subtitle">Çalış, odaklan, molanın tadını çıkar!</p>
+
+        <!-- Timer Ekranı -->
+        <div class="timer-display">
+            <span id="minutes">25</span>:<span id="seconds">00</span>
+        </div>
+
+        <div class="control-buttons">
+            <button id="startBtn" class="btn primary">Başlat</button>
+            <button id="pauseBtn" class="btn warning">Duraklat</button>
+            <button id="resetBtn" class="btn danger">Sıfırla</button>
+        </div>
+
+        <!-- Görev Alanı -->
+        <div class="task-section">
+            <h2>🎯 Odak Görevin</h2>
+            <div class="task-input-box">
+                <input type="text" id="taskInput" placeholder="Bu oturumda ne yapacaksın?">
+                <button id="addTaskBtn" class="btn add">+</button>
+            </div>
+            <ul id="taskList"></ul>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
